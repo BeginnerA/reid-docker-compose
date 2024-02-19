@@ -4,5 +4,5 @@ services:
     image: maven:latest
     container_name: maven
     volumes:
-      - ./app:/app
-    command: mvn clean install
+      - ~/.m2:/root/.m2 # 主机上 Maven 的本地仓库目录（~/.m2）挂载到容器中的 /root/.m2 目录，这样可以实现 Maven 的缓存持久化，避免每次启动容器都重新下载依赖
+    working_dir: /usr/src/app # 容器的工作目录为 /usr/src/app，以便您可以在容器中执行 Maven 构建命令
