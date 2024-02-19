@@ -59,12 +59,20 @@ cd docker-compose/Linux
 8. [grafana](./Linux/grafana)
 9. [nginx](./Linux/nginx)
 
+### 运维平台
+1. [spug](./Linux/spug)
+2. [walle](./Linux/walle)
+
 #### 文件存储
 
 1. [fastdfs](./Linux/fastdfs)
 2. [minio](./Linux/minio)
 3. [baidupcs-web](./Linux/baidupcs-web)
 4. [nextcloud](./Linux/nextcloud)
+
+#### 流媒体
+
+1. [coturn](./Linux/coturn)
 
 #### 其它
 
@@ -77,17 +85,14 @@ cd docker-compose/Linux
 7. [opensumi-web](./Linux/opensumi-web)
 8. [sentinel](./Linux/sentinel)
 9. [tomcat](./Linux/tomcat)
-10. [walle](./Linux/walle)
-11. [xxl-job](./Linux/xxl-job)
-12. [power-job](./Linux/power-job)
-13. [yapi](./Linux/yapi)
-14. [zookeeper](./Linux/zookeeper)
-15. [jpom](./Linux/jpom)
-16. [confluence](./Linux/confluence)
-17. [jira](./Linux/jira)
-18. [skywalking](./Linux/skywalking)
-19. [spug](./Linux/spug)
-20. [coturn](./Linux/coturn)
+10. [xxl-job](./Linux/xxl-job)
+11. [power-job](./Linux/power-job)
+12. [yapi](./Linux/yapi)
+13. [zookeeper](./Linux/zookeeper)
+14. [jpom](./Linux/jpom)
+15. [confluence](./Linux/confluence)
+16. [jira](./Linux/jira)
+17. [skywalking](./Linux/skywalking)
 
 ---
 
