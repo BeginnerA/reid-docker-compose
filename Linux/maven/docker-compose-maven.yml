@@ -5,4 +5,3 @@ services:
     container_name: maven
     volumes:
       - ./app:/app
-    command: mvn clean install
