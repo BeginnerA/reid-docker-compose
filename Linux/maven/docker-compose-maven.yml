@@ -2,6 +2,7 @@ version: '3'
 services:
   maven:
     image: maven:latest
+    container_name: maven
     volumes:
       - ./app:/app
     command: mvn clean install
