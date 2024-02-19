@@ -1,0 +1,9 @@
+version: '3'
+services:
+  coturn:
+    image: coturn/coturn:4.6.2           # 原镜像`coturn/coturn:4.6.2`
+    container_name: coturn_server        # 容器名为`gogs`
+    restart: unless-stopped              # 指定容器退出后的重启策略为始终重启，但是不考虑在Docker守护进程启动时就已经停止了的容器
+    network_mode: "host"
+    volumes:
+      - ./turnserver.conf:/etc/coturn/turnserver.conf
