@@ -5,4 +5,6 @@ services:
     container_name: maven
     volumes:
       - ~/.m2:/root/.m2 # 主机上 Maven 的本地仓库目录（~/.m2）挂载到容器中的 /root/.m2 目录，这样可以实现 Maven 的缓存持久化，避免每次启动容器都重新下载依赖
+      - /path/to/your/settings.xml:/usr/share/maven/ref/settings.xml # 主机上的 settings.xml 文件挂载到容器中的 /usr/share/maven/ref/settings.xml 路径下。这样 Maven 将使用您自定义的 settings.xml 文件
     working_dir: /usr/src/app # 容器的工作目录为 /usr/src/app，以便您可以在容器中执行 Maven 构建命令
+    command: sleep infinity # 使用了 sleep infinity 命令来替换默认的 Maven 构建命令。这个命令会让容器永远休眠，从而避免执行任何构建命令
